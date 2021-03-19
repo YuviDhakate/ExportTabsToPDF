@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-
 const TabbedPage = ({ tabs }) => {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
@@ -34,10 +33,7 @@ const TabbedPage = ({ tabs }) => {
         <TabPanel value={value} index={value}>
             {tabs[value].contents}
         </TabPanel>
-
-        }
     </div >
-
     )
 };
 
